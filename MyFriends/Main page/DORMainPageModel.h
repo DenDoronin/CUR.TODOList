@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  DORMainPageModel.h
 //  MyFriends
 //
 //  Created by Doronin Denis on 11/12/15.
 //  Copyright © 2015 Doronin Denis. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface DORMainPageModel : NSObject
 
 @end
-
