@@ -8,6 +8,10 @@
 
 #import <XCTest/XCTest.h>
 
+#import "DORTextValidatorEmail.h"
+#import "DORTextValidatorNumeric.h"
+#import "DOREmptyValidator.h"
+
 @interface MyFriendsTests : XCTestCase
 
 @end
@@ -24,9 +28,72 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+- (void) testEmptyValidator
+{
+    NSString *testString;
+    BOOL      result;
+    DOREmptyValidator *validator = [DOREmptyValidator new];
+    
+    testString = nil;
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == NO, @"nil string should return NO");
+    
+    testString = @"";
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == NO, @"empty string should return NO");
+    
+    testString = @"test";
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == YES, @"non empty string should return YES");
+    
+    
+}
+
+- (void) testEmailValidator
+{
+    NSString *testString;
+    BOOL      result;
+    DORTextValidatorEmail *validator = [DORTextValidatorEmail new];
+    
+    testString = nil;
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == NO, @"nil string should return NO");
+    
+    testString = @"";
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == NO, @"empty string should return NO");
+    
+    testString = @"test";
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == NO, @"non valid email string should return NO");
+    
+    testString = @"test@test.com";
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == YES, @" valid email string should return YES");
+}
+
+- (void) testPhoneValidator
+{
+    NSString *testString;
+    BOOL      result;
+    DORTextValidatorNumeric *validator = [DORTextValidatorNumeric new];
+    
+    testString = nil;
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == NO, @"nil string should return NO");
+    
+    testString = @"";
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == NO, @"empty string should return NO");
+    
+    testString = @"test";
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == NO, @"text string should return NO");
+    
+    testString = @"380507085116";
+    result = [validator isValidInputValue:testString];
+    XCTAssert(result == YES, @"string with set of characters {0123456789 +-()} should return YES");
 }
 
 - (void)testPerformanceExample {

@@ -1,8 +1,8 @@
 //
-//  CURImageDownloader.h
+//  DORImageDownloader.h
 //  DocumentInteraction
 //
-//  Created by Doronin Denis on 11/27/14.
+//  Created by Doronin Denis on 11/13/15.
 //  Copyright (c) 2014 Doronin Denis. All rights reserved.
 //
 

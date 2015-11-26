@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DORMainPageModel.h"
+#import "DORBaseTableViewController.h"
+@interface DORMainPageController : DORBaseTableViewController
 
-@interface DORMainPageController : UITableViewController
-
+@property (nonatomic, strong) DORMainPageModel *model;
 @end

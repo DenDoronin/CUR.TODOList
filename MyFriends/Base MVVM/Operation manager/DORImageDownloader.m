@@ -47,8 +47,9 @@
         if (self.isCancelled)
             return;
 
-        
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: YES];
         NSData *imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString: self.fileRecord.picture.mediumURL]];
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: NO];
         
         if (self.isCancelled) {
             imageData = nil;

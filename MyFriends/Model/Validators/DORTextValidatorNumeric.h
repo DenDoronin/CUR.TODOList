@@ -6,7 +6,7 @@
 //  Copyright © 2015 Doronin Denis. All rights reserved.
 //
 
-#import "CURBaseValidator.h"
+#import "DORBaseValidator.h"
 
 @interface DORTextValidatorNumeric : DORBaseValidator
 

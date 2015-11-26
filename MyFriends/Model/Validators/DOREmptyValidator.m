@@ -43,7 +43,7 @@
     else
     {
         isValid = NO;
-        self.errorText = NSLocalizedString(@"Login shouldn't be empty", nil);
+        self.errorText = NSLocalizedString(@"Field shouldn't be empty", nil);
     }
     
     self.isValid = isValid;

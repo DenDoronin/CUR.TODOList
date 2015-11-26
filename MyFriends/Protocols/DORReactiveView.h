@@ -8,25 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CURReactiveView <NSObject>
+@protocol DORReactiveView <NSObject>
 
 
 @required
 /// Binds the given view model to the view
 - (void)bindViewModel:(id)viewModel;
-
-@optional
-- (void)validateViewModel:(id)viewModel;
-
-
-@end
-@protocol CURTransacionView <NSObject>
-
-
-@required
-/// Binds the given view model to the view
-- (void)bindViewModel:(id)viewModel
-       withCurrencies: (NSArray*) currencies;
 
 @optional
 - (void)validateViewModel:(id)viewModel;

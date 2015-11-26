@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CURBaseModel.h"
-#import "CURBaseView.h"
-@interface DORBaseController : UIViewController<CURModelActivityDelegate>
+#import "DORBaseModel.h"
+#import "DORBaseView.h"
+@interface DORBaseController : UIViewController<DORModelActivityDelegate>
 
-@property (nonatomic, strong) CURBaseView *view;
-@property (nonatomic, strong) CURBaseModel *model;
+@property (nonatomic, strong) DORBaseView *view;
+@property (nonatomic, strong) DORBaseModel *model;
 
 - (void) bindViewModel;
 

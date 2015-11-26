@@ -53,6 +53,7 @@ static NSString *   const kTextValidatorEmailLatinLettersRegularExpression =
         }
     }
     return strippedString;
+    
 }
 
 - (NSString*)   stripAndMaskInputValue: (NSString*) inputValue

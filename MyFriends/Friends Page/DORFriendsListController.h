@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DORBaseTableViewController.h"
+#import "DORFriendsListModel.h"
 
-@interface DORFriendsListController : UITableViewController
+@interface DORFriendsListController : DORBaseTableViewController
+
+@property (nonatomic, strong) DORFriendsListModel *model;
 
 @end

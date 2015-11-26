@@ -7,6 +7,10 @@
 //
 
 #import "DORUser.h"
+#import "DORName.h"
+#import "DORLocation.h"
+#import "DORPicture.h"
+
 
 @implementation DORUser
 

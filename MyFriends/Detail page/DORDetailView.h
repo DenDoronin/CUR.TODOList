@@ -10,4 +10,10 @@
 
 @interface DORDetailView : DORBaseView
 
+@property (weak, nonatomic) IBOutlet UIImageView *ivPhoto;
+@property (weak, nonatomic) IBOutlet UITextField *tfFirst;
+@property (weak, nonatomic) IBOutlet UITextField *tfLast;
+@property (weak, nonatomic) IBOutlet UITextField *tfEmail;
+@property (weak, nonatomic) IBOutlet UITextField *tfPhone;
+
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DORBaseTableModel.h"
+@interface DORMainPageModel : DORBaseTableModel
 
-@interface DORMainPageModel : NSObject
 
+- (void) updateData;
+- (void) deleteFriendAtIndexPath: (NSIndexPath*) indexPath;
 @end

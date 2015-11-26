@@ -10,7 +10,15 @@
 
 @implementation DORBaseModel
 
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _canEdit = YES;
+        _activityMessage = @"";
+    }
+    return self;
+}
 - (instancetype)initWithManagerProvider:(id)provider
 {
     if (self = [super init])
@@ -56,5 +64,7 @@
         
     }
 }
+
+
 
 @end
