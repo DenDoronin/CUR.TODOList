@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "DORModelProtocol.h"
-
+#import "DORBaseValidator.h"
 @interface DORBaseModel : NSObject<DORModelProtocol>
 {
     @protected

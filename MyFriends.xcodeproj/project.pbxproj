@@ -9,13 +9,45 @@
 /* Begin PBXBuildFile section */
 		811CF4CD1BF4B36100F77B6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 811CF4CC1BF4B36100F77B6A /* main.m */; };
 		811CF4D01BF4B36100F77B6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 811CF4CF1BF4B36100F77B6A /* AppDelegate.m */; };
-		811CF4D31BF4B36100F77B6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811CF4D21BF4B36100F77B6A /* ViewController.m */; };
 		811CF4D61BF4B36100F77B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811CF4D41BF4B36100F77B6A /* Main.storyboard */; };
 		811CF4D91BF4B36100F77B6A /* MyFriends.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 811CF4D71BF4B36100F77B6A /* MyFriends.xcdatamodeld */; };
 		811CF4DB1BF4B36100F77B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811CF4DA1BF4B36100F77B6A /* Assets.xcassets */; };
 		811CF4DE1BF4B36100F77B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811CF4DC1BF4B36100F77B6A /* LaunchScreen.storyboard */; };
 		811CF4E91BF4B36100F77B6A /* MyFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811CF4E81BF4B36100F77B6A /* MyFriendsTests.m */; };
 		811CF4F41BF4B36100F77B6A /* MyFriendsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811CF4F31BF4B36100F77B6A /* MyFriendsUITests.m */; };
+		811CF5071BF4B56300F77B6A /* DORFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 811CF5061BF4B56300F77B6A /* DORFriendCell.m */; };
+		81286C701BF4B6A400D00BD5 /* DORMainPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C6F1BF4B6A400D00BD5 /* DORMainPageController.m */; };
+		81286C731BF4B6BC00D00BD5 /* DORMainPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C721BF4B6BC00D00BD5 /* DORMainPageModel.m */; };
+		81286C7B1BF4B88700D00BD5 /* DORBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C761BF4B88700D00BD5 /* DORBaseController.m */; };
+		81286C7C1BF4B88700D00BD5 /* DORBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C781BF4B88700D00BD5 /* DORBaseModel.m */; };
+		81286C7D1BF4B88700D00BD5 /* DORBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C7A1BF4B88700D00BD5 /* DORBaseView.m */; };
+		81286C8B1BF4B93900D00BD5 /* UITextField+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C831BF4B93900D00BD5 /* UITextField+Validation.m */; };
+		81286C8C1BF4B93900D00BD5 /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C851BF4B93900D00BD5 /* UIView+Animations.m */; };
+		81286C8D1BF4B93900D00BD5 /* UIView+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C871BF4B93900D00BD5 /* UIView+Components.m */; };
+		81286C8E1BF4B93900D00BD5 /* UIView+ViewHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C891BF4B93900D00BD5 /* UIView+ViewHierarchy.m */; };
+		81286C961BF4B98900D00BD5 /* DORBaseValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C931BF4B98900D00BD5 /* DORBaseValidator.m */; };
+		81286C971BF4B98900D00BD5 /* DOREmptyValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C951BF4B98900D00BD5 /* DOREmptyValidator.m */; };
+		81286CA01BF4BADF00D00BD5 /* DORBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286C9F1BF4BADF00D00BD5 /* DORBubbleView.m */; };
+		81286CB31BF5BCC200D00BD5 /* DORUser+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CA41BF5BCC200D00BD5 /* DORUser+CoreDataProperties.m */; };
+		81286CB41BF5BCC200D00BD5 /* DORUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CA61BF5BCC200D00BD5 /* DORUser.m */; };
+		81286CB51BF5BCC200D00BD5 /* DORLocation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CA81BF5BCC200D00BD5 /* DORLocation+CoreDataProperties.m */; };
+		81286CB61BF5BCC200D00BD5 /* DORLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CAA1BF5BCC200D00BD5 /* DORLocation.m */; };
+		81286CB71BF5BCC200D00BD5 /* DORName+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CAC1BF5BCC200D00BD5 /* DORName+CoreDataProperties.m */; };
+		81286CB81BF5BCC200D00BD5 /* DORName.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CAE1BF5BCC200D00BD5 /* DORName.m */; };
+		81286CB91BF5BCC200D00BD5 /* DORPicture+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CB01BF5BCC200D00BD5 /* DORPicture+CoreDataProperties.m */; };
+		81286CBA1BF5BCC200D00BD5 /* DORPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CB21BF5BCC200D00BD5 /* DORPicture.m */; };
+		81286CBD1BF5C86500D00BD5 /* DORFriendsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CBC1BF5C86500D00BD5 /* DORFriendsListController.m */; };
+		81286CC01BF5CB5800D00BD5 /* DORBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CBF1BF5CB5800D00BD5 /* DORBaseTableViewController.m */; };
+		81286CC31BF5CCF200D00BD5 /* DORFriendsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CC21BF5CCF200D00BD5 /* DORFriendsListModel.m */; };
+		81286CC61BF5DE4100D00BD5 /* DORBaseTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CC51BF5DE4100D00BD5 /* DORBaseTableModel.m */; };
+		81286CD01BF5DE9F00D00BD5 /* DORImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CCC1BF5DE9F00D00BD5 /* DORImageDownloader.m */; };
+		81286CD11BF5DE9F00D00BD5 /* PendingOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CCE1BF5DE9F00D00BD5 /* PendingOperations.m */; };
+		81286CD41BF5EBE500D00BD5 /* DORDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CD31BF5EBE500D00BD5 /* DORDetailController.m */; };
+		81286CD71BF5EC7200D00BD5 /* DORDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CD61BF5EC7200D00BD5 /* DORDetailModel.m */; };
+		81286CDA1BF5ECE000D00BD5 /* DORDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CD91BF5ECE000D00BD5 /* DORDetailView.m */; };
+		81286CE51BF6135C00D00BD5 /* DORTextValidatorEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CE21BF6135C00D00BD5 /* DORTextValidatorEmail.m */; };
+		81286CE61BF6135C00D00BD5 /* DORTextValidatorNumeric.m in Sources */ = {isa = PBXBuildFile; fileRef = 81286CE41BF6135C00D00BD5 /* DORTextValidatorNumeric.m */; };
+		D66CA191E0F0B5F0D8E4E027 /* libPods-MyFriends.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0E47974000B2C46050EAE5 /* libPods-MyFriends.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +72,6 @@
 		811CF4CC1BF4B36100F77B6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		811CF4CE1BF4B36100F77B6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		811CF4CF1BF4B36100F77B6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		811CF4D11BF4B36100F77B6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		811CF4D21BF4B36100F77B6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		811CF4D51BF4B36100F77B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		811CF4D81BF4B36100F77B6A /* MyFriends.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFriends.xcdatamodel; sourceTree = "<group>"; };
 		811CF4DA1BF4B36100F77B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +83,77 @@
 		811CF4EF1BF4B36100F77B6A /* MyFriendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFriendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		811CF4F31BF4B36100F77B6A /* MyFriendsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFriendsUITests.m; sourceTree = "<group>"; };
 		811CF4F51BF4B36100F77B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811CF5051BF4B56300F77B6A /* DORFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORFriendCell.h; path = Cell/DORFriendCell.h; sourceTree = "<group>"; };
+		811CF5061BF4B56300F77B6A /* DORFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORFriendCell.m; path = Cell/DORFriendCell.m; sourceTree = "<group>"; };
+		81286C6E1BF4B6A400D00BD5 /* DORMainPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORMainPageController.h; path = "Main page/DORMainPageController.h"; sourceTree = "<group>"; };
+		81286C6F1BF4B6A400D00BD5 /* DORMainPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORMainPageController.m; path = "Main page/DORMainPageController.m"; sourceTree = "<group>"; };
+		81286C711BF4B6BC00D00BD5 /* DORMainPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORMainPageModel.h; path = "Main page/DORMainPageModel.h"; sourceTree = "<group>"; };
+		81286C721BF4B6BC00D00BD5 /* DORMainPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORMainPageModel.m; path = "Main page/DORMainPageModel.m"; sourceTree = "<group>"; };
+		81286C751BF4B88700D00BD5 /* DORBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORBaseController.h; sourceTree = "<group>"; };
+		81286C761BF4B88700D00BD5 /* DORBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORBaseController.m; sourceTree = "<group>"; };
+		81286C771BF4B88700D00BD5 /* DORBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORBaseModel.h; sourceTree = "<group>"; };
+		81286C781BF4B88700D00BD5 /* DORBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORBaseModel.m; sourceTree = "<group>"; };
+		81286C791BF4B88700D00BD5 /* DORBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORBaseView.h; sourceTree = "<group>"; };
+		81286C7A1BF4B88700D00BD5 /* DORBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORBaseView.m; sourceTree = "<group>"; };
+		81286C821BF4B93900D00BD5 /* UITextField+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Validation.h"; sourceTree = "<group>"; };
+		81286C831BF4B93900D00BD5 /* UITextField+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Validation.m"; sourceTree = "<group>"; };
+		81286C841BF4B93900D00BD5 /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animations.h"; sourceTree = "<group>"; };
+		81286C851BF4B93900D00BD5 /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animations.m"; sourceTree = "<group>"; };
+		81286C861BF4B93900D00BD5 /* UIView+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Components.h"; sourceTree = "<group>"; };
+		81286C871BF4B93900D00BD5 /* UIView+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Components.m"; sourceTree = "<group>"; };
+		81286C881BF4B93900D00BD5 /* UIView+ViewHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewHierarchy.h"; sourceTree = "<group>"; };
+		81286C891BF4B93900D00BD5 /* UIView+ViewHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewHierarchy.m"; sourceTree = "<group>"; };
+		81286C921BF4B98900D00BD5 /* DORBaseValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORBaseValidator.h; sourceTree = "<group>"; };
+		81286C931BF4B98900D00BD5 /* DORBaseValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORBaseValidator.m; sourceTree = "<group>"; };
+		81286C941BF4B98900D00BD5 /* DOREmptyValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOREmptyValidator.h; sourceTree = "<group>"; };
+		81286C951BF4B98900D00BD5 /* DOREmptyValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOREmptyValidator.m; sourceTree = "<group>"; };
+		81286C991BF4B9A500D00BD5 /* DORModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORModelProtocol.h; sourceTree = "<group>"; };
+		81286C9A1BF4B9A500D00BD5 /* DORReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORReactiveView.h; sourceTree = "<group>"; };
+		81286C9B1BF4B9A500D00BD5 /* DORTextFieldValidatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORTextFieldValidatorProtocol.h; sourceTree = "<group>"; };
+		81286C9E1BF4BADF00D00BD5 /* DORBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORBubbleView.h; sourceTree = "<group>"; };
+		81286C9F1BF4BADF00D00BD5 /* DORBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORBubbleView.m; sourceTree = "<group>"; };
+		81286CA11BF4BC5D00D00BD5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = MyFriends/PrefixHeader.pch; sourceTree = "<group>"; };
+		81286CA31BF5BCC200D00BD5 /* DORUser+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DORUser+CoreDataProperties.h"; path = "Entities/DORUser+CoreDataProperties.h"; sourceTree = "<group>"; };
+		81286CA41BF5BCC200D00BD5 /* DORUser+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DORUser+CoreDataProperties.m"; path = "Entities/DORUser+CoreDataProperties.m"; sourceTree = "<group>"; };
+		81286CA51BF5BCC200D00BD5 /* DORUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORUser.h; path = Entities/DORUser.h; sourceTree = "<group>"; };
+		81286CA61BF5BCC200D00BD5 /* DORUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORUser.m; path = Entities/DORUser.m; sourceTree = "<group>"; };
+		81286CA71BF5BCC200D00BD5 /* DORLocation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DORLocation+CoreDataProperties.h"; path = "Entities/DORLocation+CoreDataProperties.h"; sourceTree = "<group>"; };
+		81286CA81BF5BCC200D00BD5 /* DORLocation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DORLocation+CoreDataProperties.m"; path = "Entities/DORLocation+CoreDataProperties.m"; sourceTree = "<group>"; };
+		81286CA91BF5BCC200D00BD5 /* DORLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORLocation.h; path = Entities/DORLocation.h; sourceTree = "<group>"; };
+		81286CAA1BF5BCC200D00BD5 /* DORLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORLocation.m; path = Entities/DORLocation.m; sourceTree = "<group>"; };
+		81286CAB1BF5BCC200D00BD5 /* DORName+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DORName+CoreDataProperties.h"; path = "Entities/DORName+CoreDataProperties.h"; sourceTree = "<group>"; };
+		81286CAC1BF5BCC200D00BD5 /* DORName+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DORName+CoreDataProperties.m"; path = "Entities/DORName+CoreDataProperties.m"; sourceTree = "<group>"; };
+		81286CAD1BF5BCC200D00BD5 /* DORName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORName.h; path = Entities/DORName.h; sourceTree = "<group>"; };
+		81286CAE1BF5BCC200D00BD5 /* DORName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORName.m; path = Entities/DORName.m; sourceTree = "<group>"; };
+		81286CAF1BF5BCC200D00BD5 /* DORPicture+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DORPicture+CoreDataProperties.h"; path = "Entities/DORPicture+CoreDataProperties.h"; sourceTree = "<group>"; };
+		81286CB01BF5BCC200D00BD5 /* DORPicture+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DORPicture+CoreDataProperties.m"; path = "Entities/DORPicture+CoreDataProperties.m"; sourceTree = "<group>"; };
+		81286CB11BF5BCC200D00BD5 /* DORPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORPicture.h; path = Entities/DORPicture.h; sourceTree = "<group>"; };
+		81286CB21BF5BCC200D00BD5 /* DORPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORPicture.m; path = Entities/DORPicture.m; sourceTree = "<group>"; };
+		81286CBB1BF5C86500D00BD5 /* DORFriendsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORFriendsListController.h; path = "Friends Page/DORFriendsListController.h"; sourceTree = "<group>"; };
+		81286CBC1BF5C86500D00BD5 /* DORFriendsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORFriendsListController.m; path = "Friends Page/DORFriendsListController.m"; sourceTree = "<group>"; };
+		81286CBE1BF5CB5800D00BD5 /* DORBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORBaseTableViewController.h; sourceTree = "<group>"; };
+		81286CBF1BF5CB5800D00BD5 /* DORBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORBaseTableViewController.m; sourceTree = "<group>"; };
+		81286CC11BF5CCF200D00BD5 /* DORFriendsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORFriendsListModel.h; path = "Friends Page/DORFriendsListModel.h"; sourceTree = "<group>"; };
+		81286CC21BF5CCF200D00BD5 /* DORFriendsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORFriendsListModel.m; path = "Friends Page/DORFriendsListModel.m"; sourceTree = "<group>"; };
+		81286CC41BF5DE4100D00BD5 /* DORBaseTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORBaseTableModel.h; sourceTree = "<group>"; };
+		81286CC51BF5DE4100D00BD5 /* DORBaseTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORBaseTableModel.m; sourceTree = "<group>"; };
+		81286CCB1BF5DE9F00D00BD5 /* DORImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORImageDownloader.h; sourceTree = "<group>"; };
+		81286CCC1BF5DE9F00D00BD5 /* DORImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORImageDownloader.m; sourceTree = "<group>"; };
+		81286CCD1BF5DE9F00D00BD5 /* PendingOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingOperations.h; sourceTree = "<group>"; };
+		81286CCE1BF5DE9F00D00BD5 /* PendingOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingOperations.m; sourceTree = "<group>"; };
+		81286CD21BF5EBE500D00BD5 /* DORDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORDetailController.h; path = "Detail page/DORDetailController.h"; sourceTree = "<group>"; };
+		81286CD31BF5EBE500D00BD5 /* DORDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORDetailController.m; path = "Detail page/DORDetailController.m"; sourceTree = "<group>"; };
+		81286CD51BF5EC7200D00BD5 /* DORDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORDetailModel.h; path = "Detail page/DORDetailModel.h"; sourceTree = "<group>"; };
+		81286CD61BF5EC7200D00BD5 /* DORDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORDetailModel.m; path = "Detail page/DORDetailModel.m"; sourceTree = "<group>"; };
+		81286CD81BF5ECE000D00BD5 /* DORDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DORDetailView.h; path = "Detail page/DORDetailView.h"; sourceTree = "<group>"; };
+		81286CD91BF5ECE000D00BD5 /* DORDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DORDetailView.m; path = "Detail page/DORDetailView.m"; sourceTree = "<group>"; };
+		81286CE11BF6135C00D00BD5 /* DORTextValidatorEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORTextValidatorEmail.h; sourceTree = "<group>"; };
+		81286CE21BF6135C00D00BD5 /* DORTextValidatorEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORTextValidatorEmail.m; sourceTree = "<group>"; };
+		81286CE31BF6135C00D00BD5 /* DORTextValidatorNumeric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORTextValidatorNumeric.h; sourceTree = "<group>"; };
+		81286CE41BF6135C00D00BD5 /* DORTextValidatorNumeric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORTextValidatorNumeric.m; sourceTree = "<group>"; };
+		A965E1D7EAB42843AB2FC721 /* Pods-MyFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFriends.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFriends/Pods-MyFriends.release.xcconfig"; sourceTree = "<group>"; };
+		D6E41B7D8AA7D5E8AADA0088 /* Pods-MyFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFriends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFriends/Pods-MyFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		ED0E47974000B2C46050EAE5 /* libPods-MyFriends.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFriends.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66CA191E0F0B5F0D8E4E027 /* libPods-MyFriends.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +185,13 @@
 		811CF4BF1BF4B36100F77B6A = {
 			isa = PBXGroup;
 			children = (
+				81286CA11BF4BC5D00D00BD5 /* PrefixHeader.pch */,
 				811CF4CA1BF4B36100F77B6A /* MyFriends */,
 				811CF4E71BF4B36100F77B6A /* MyFriendsTests */,
 				811CF4F21BF4B36100F77B6A /* MyFriendsUITests */,
 				811CF4C91BF4B36100F77B6A /* Products */,
+				CA08EFF7AC2D026F426068CF /* Pods */,
+				E4103F8DC18D2F34AAAC9789 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +208,17 @@
 		811CF4CA1BF4B36100F77B6A /* MyFriends */ = {
 			isa = PBXGroup;
 			children = (
+				81286C9C1BF4BADF00D00BD5 /* Views */,
+				81286C981BF4B9A500D00BD5 /* Protocols */,
+				81286C901BF4B98900D00BD5 /* Model */,
+				81286C7F1BF4B93900D00BD5 /* Extensions */,
+				81286C741BF4B88700D00BD5 /* Base MVVM */,
+				811CF5041BF4B54800F77B6A /* Cell */,
+				811CF5031BF4B38700F77B6A /* Friends page */,
+				811CF5021BF4B37F00F77B6A /* Detail page */,
+				811CF5011BF4B37400F77B6A /* Main page */,
 				811CF4CE1BF4B36100F77B6A /* AppDelegate.h */,
 				811CF4CF1BF4B36100F77B6A /* AppDelegate.m */,
-				811CF4D11BF4B36100F77B6A /* ViewController.h */,
-				811CF4D21BF4B36100F77B6A /* ViewController.m */,
 				811CF4D41BF4B36100F77B6A /* Main.storyboard */,
 				811CF4DA1BF4B36100F77B6A /* Assets.xcassets */,
 				811CF4DC1BF4B36100F77B6A /* LaunchScreen.storyboard */,
@@ -143,6 +255,193 @@
 			path = MyFriendsUITests;
 			sourceTree = "<group>";
 		};
+		811CF5011BF4B37400F77B6A /* Main page */ = {
+			isa = PBXGroup;
+			children = (
+				81286C6E1BF4B6A400D00BD5 /* DORMainPageController.h */,
+				81286C6F1BF4B6A400D00BD5 /* DORMainPageController.m */,
+				81286C711BF4B6BC00D00BD5 /* DORMainPageModel.h */,
+				81286C721BF4B6BC00D00BD5 /* DORMainPageModel.m */,
+			);
+			name = "Main page";
+			sourceTree = "<group>";
+		};
+		811CF5021BF4B37F00F77B6A /* Detail page */ = {
+			isa = PBXGroup;
+			children = (
+				81286CD21BF5EBE500D00BD5 /* DORDetailController.h */,
+				81286CD31BF5EBE500D00BD5 /* DORDetailController.m */,
+				81286CD51BF5EC7200D00BD5 /* DORDetailModel.h */,
+				81286CD61BF5EC7200D00BD5 /* DORDetailModel.m */,
+				81286CD81BF5ECE000D00BD5 /* DORDetailView.h */,
+				81286CD91BF5ECE000D00BD5 /* DORDetailView.m */,
+			);
+			name = "Detail page";
+			sourceTree = "<group>";
+		};
+		811CF5031BF4B38700F77B6A /* Friends page */ = {
+			isa = PBXGroup;
+			children = (
+				81286CBB1BF5C86500D00BD5 /* DORFriendsListController.h */,
+				81286CBC1BF5C86500D00BD5 /* DORFriendsListController.m */,
+				81286CC11BF5CCF200D00BD5 /* DORFriendsListModel.h */,
+				81286CC21BF5CCF200D00BD5 /* DORFriendsListModel.m */,
+			);
+			name = "Friends page";
+			sourceTree = "<group>";
+		};
+		811CF5041BF4B54800F77B6A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				811CF5051BF4B56300F77B6A /* DORFriendCell.h */,
+				811CF5061BF4B56300F77B6A /* DORFriendCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		81286C741BF4B88700D00BD5 /* Base MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				81286CC71BF5DE6F00D00BD5 /* Table */,
+				81286C751BF4B88700D00BD5 /* DORBaseController.h */,
+				81286C761BF4B88700D00BD5 /* DORBaseController.m */,
+				81286C771BF4B88700D00BD5 /* DORBaseModel.h */,
+				81286C781BF4B88700D00BD5 /* DORBaseModel.m */,
+				81286C791BF4B88700D00BD5 /* DORBaseView.h */,
+				81286C7A1BF4B88700D00BD5 /* DORBaseView.m */,
+			);
+			path = "Base MVVM";
+			sourceTree = "<group>";
+		};
+		81286C7F1BF4B93900D00BD5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81286C821BF4B93900D00BD5 /* UITextField+Validation.h */,
+				81286C831BF4B93900D00BD5 /* UITextField+Validation.m */,
+				81286C841BF4B93900D00BD5 /* UIView+Animations.h */,
+				81286C851BF4B93900D00BD5 /* UIView+Animations.m */,
+				81286C861BF4B93900D00BD5 /* UIView+Components.h */,
+				81286C871BF4B93900D00BD5 /* UIView+Components.m */,
+				81286C881BF4B93900D00BD5 /* UIView+ViewHierarchy.h */,
+				81286C891BF4B93900D00BD5 /* UIView+ViewHierarchy.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81286C901BF4B98900D00BD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81286CA21BF5BCAA00D00BD5 /* Entities */,
+				81286C911BF4B98900D00BD5 /* Validators */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81286C911BF4B98900D00BD5 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				81286CE11BF6135C00D00BD5 /* DORTextValidatorEmail.h */,
+				81286CE21BF6135C00D00BD5 /* DORTextValidatorEmail.m */,
+				81286CE31BF6135C00D00BD5 /* DORTextValidatorNumeric.h */,
+				81286CE41BF6135C00D00BD5 /* DORTextValidatorNumeric.m */,
+				81286C921BF4B98900D00BD5 /* DORBaseValidator.h */,
+				81286C931BF4B98900D00BD5 /* DORBaseValidator.m */,
+				81286C941BF4B98900D00BD5 /* DOREmptyValidator.h */,
+				81286C951BF4B98900D00BD5 /* DOREmptyValidator.m */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		81286C981BF4B9A500D00BD5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				81286C991BF4B9A500D00BD5 /* DORModelProtocol.h */,
+				81286C9A1BF4B9A500D00BD5 /* DORReactiveView.h */,
+				81286C9B1BF4B9A500D00BD5 /* DORTextFieldValidatorProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		81286C9C1BF4BADF00D00BD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81286C9D1BF4BADF00D00BD5 /* Bubble view */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81286C9D1BF4BADF00D00BD5 /* Bubble view */ = {
+			isa = PBXGroup;
+			children = (
+				81286C9E1BF4BADF00D00BD5 /* DORBubbleView.h */,
+				81286C9F1BF4BADF00D00BD5 /* DORBubbleView.m */,
+			);
+			path = "Bubble view";
+			sourceTree = "<group>";
+		};
+		81286CA21BF5BCAA00D00BD5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				81286CA31BF5BCC200D00BD5 /* DORUser+CoreDataProperties.h */,
+				81286CA41BF5BCC200D00BD5 /* DORUser+CoreDataProperties.m */,
+				81286CA51BF5BCC200D00BD5 /* DORUser.h */,
+				81286CA61BF5BCC200D00BD5 /* DORUser.m */,
+				81286CA71BF5BCC200D00BD5 /* DORLocation+CoreDataProperties.h */,
+				81286CA81BF5BCC200D00BD5 /* DORLocation+CoreDataProperties.m */,
+				81286CA91BF5BCC200D00BD5 /* DORLocation.h */,
+				81286CAA1BF5BCC200D00BD5 /* DORLocation.m */,
+				81286CAB1BF5BCC200D00BD5 /* DORName+CoreDataProperties.h */,
+				81286CAC1BF5BCC200D00BD5 /* DORName+CoreDataProperties.m */,
+				81286CAD1BF5BCC200D00BD5 /* DORName.h */,
+				81286CAE1BF5BCC200D00BD5 /* DORName.m */,
+				81286CAF1BF5BCC200D00BD5 /* DORPicture+CoreDataProperties.h */,
+				81286CB01BF5BCC200D00BD5 /* DORPicture+CoreDataProperties.m */,
+				81286CB11BF5BCC200D00BD5 /* DORPicture.h */,
+				81286CB21BF5BCC200D00BD5 /* DORPicture.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		81286CC71BF5DE6F00D00BD5 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				81286CC81BF5DE9F00D00BD5 /* Operation manager */,
+				81286CBE1BF5CB5800D00BD5 /* DORBaseTableViewController.h */,
+				81286CBF1BF5CB5800D00BD5 /* DORBaseTableViewController.m */,
+				81286CC41BF5DE4100D00BD5 /* DORBaseTableModel.h */,
+				81286CC51BF5DE4100D00BD5 /* DORBaseTableModel.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		81286CC81BF5DE9F00D00BD5 /* Operation manager */ = {
+			isa = PBXGroup;
+			children = (
+				81286CCB1BF5DE9F00D00BD5 /* DORImageDownloader.h */,
+				81286CCC1BF5DE9F00D00BD5 /* DORImageDownloader.m */,
+				81286CCD1BF5DE9F00D00BD5 /* PendingOperations.h */,
+				81286CCE1BF5DE9F00D00BD5 /* PendingOperations.m */,
+			);
+			path = "Operation manager";
+			sourceTree = "<group>";
+		};
+		CA08EFF7AC2D026F426068CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6E41B7D8AA7D5E8AADA0088 /* Pods-MyFriends.debug.xcconfig */,
+				A965E1D7EAB42843AB2FC721 /* Pods-MyFriends.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4103F8DC18D2F34AAAC9789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED0E47974000B2C46050EAE5 /* libPods-MyFriends.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +449,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 811CF4F81BF4B36100F77B6A /* Build configuration list for PBXNativeTarget "MyFriends" */;
 			buildPhases = (
+				5E599FE83411796A45583BC8 /* Check Pods Manifest.lock */,
 				811CF4C41BF4B36100F77B6A /* Sources */,
 				811CF4C51BF4B36100F77B6A /* Frameworks */,
 				811CF4C61BF4B36100F77B6A /* Resources */,
+				607A7C9BA23BCD7014EC6F96 /* Embed Pods Frameworks */,
+				08729E54BBDB6C9EDF80ED12 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,15 +570,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08729E54BBDB6C9EDF80ED12 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFriends/Pods-MyFriends-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E599FE83411796A45583BC8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		607A7C9BA23BCD7014EC6F96 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFriends/Pods-MyFriends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		811CF4C41BF4B36100F77B6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				811CF4D31BF4B36100F77B6A /* ViewController.m in Sources */,
+				81286CBA1BF5BCC200D00BD5 /* DORPicture.m in Sources */,
 				811CF4D01BF4B36100F77B6A /* AppDelegate.m in Sources */,
+				81286C8E1BF4B93900D00BD5 /* UIView+ViewHierarchy.m in Sources */,
+				81286CB81BF5BCC200D00BD5 /* DORName.m in Sources */,
+				81286C8C1BF4B93900D00BD5 /* UIView+Animations.m in Sources */,
+				81286CB51BF5BCC200D00BD5 /* DORLocation+CoreDataProperties.m in Sources */,
 				811CF4CD1BF4B36100F77B6A /* main.m in Sources */,
+				81286CA01BF4BADF00D00BD5 /* DORBubbleView.m in Sources */,
+				81286CB61BF5BCC200D00BD5 /* DORLocation.m in Sources */,
+				81286C7D1BF4B88700D00BD5 /* DORBaseView.m in Sources */,
+				81286C971BF4B98900D00BD5 /* DOREmptyValidator.m in Sources */,
+				81286CBD1BF5C86500D00BD5 /* DORFriendsListController.m in Sources */,
 				811CF4D91BF4B36100F77B6A /* MyFriends.xcdatamodeld in Sources */,
+				81286C701BF4B6A400D00BD5 /* DORMainPageController.m in Sources */,
+				811CF5071BF4B56300F77B6A /* DORFriendCell.m in Sources */,
+				81286C731BF4B6BC00D00BD5 /* DORMainPageModel.m in Sources */,
+				81286C8D1BF4B93900D00BD5 /* UIView+Components.m in Sources */,
+				81286CB41BF5BCC200D00BD5 /* DORUser.m in Sources */,
+				81286CB91BF5BCC200D00BD5 /* DORPicture+CoreDataProperties.m in Sources */,
+				81286CD41BF5EBE500D00BD5 /* DORDetailController.m in Sources */,
+				81286CD71BF5EC7200D00BD5 /* DORDetailModel.m in Sources */,
+				81286C961BF4B98900D00BD5 /* DORBaseValidator.m in Sources */,
+				81286CC31BF5CCF200D00BD5 /* DORFriendsListModel.m in Sources */,
+				81286CB31BF5BCC200D00BD5 /* DORUser+CoreDataProperties.m in Sources */,
+				81286CDA1BF5ECE000D00BD5 /* DORDetailView.m in Sources */,
+				81286CE51BF6135C00D00BD5 /* DORTextValidatorEmail.m in Sources */,
+				81286CD11BF5DE9F00D00BD5 /* PendingOperations.m in Sources */,
+				81286C8B1BF4B93900D00BD5 /* UITextField+Validation.m in Sources */,
+				81286CC01BF5CB5800D00BD5 /* DORBaseTableViewController.m in Sources */,
+				81286C7B1BF4B88700D00BD5 /* DORBaseController.m in Sources */,
+				81286CB71BF5BCC200D00BD5 /* DORName+CoreDataProperties.m in Sources */,
+				81286CE61BF6135C00D00BD5 /* DORTextValidatorNumeric.m in Sources */,
+				81286CD01BF5DE9F00D00BD5 /* DORImageDownloader.m in Sources */,
+				81286C7C1BF4B88700D00BD5 /* DORBaseModel.m in Sources */,
+				81286CC61BF5DE4100D00BD5 /* DORBaseTableModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +748,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -405,7 +786,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -415,9 +796,12 @@
 		};
 		811CF4F91BF4B36100F77B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6E41B7D8AA7D5E8AADA0088 /* Pods-MyFriends.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyFriends/PrefixHeader.pch";
 				INFOPLIST_FILE = MyFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DOR.MyFriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,9 +810,12 @@
 		};
 		811CF4FA1BF4B36100F77B6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A965E1D7EAB42843AB2FC721 /* Pods-MyFriends.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyFriends/PrefixHeader.pch";
 				INFOPLIST_FILE = MyFriends/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DOR.MyFriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +889,7 @@
 				811CF4FA1BF4B36100F77B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		811CF4FB1BF4B36100F77B6A /* Build configuration list for PBXNativeTarget "MyFriendsTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +898,7 @@
 				811CF4FD1BF4B36100F77B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		811CF4FE1BF4B36100F77B6A /* Build configuration list for PBXNativeTarget "MyFriendsUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +907,7 @@
 				811CF5001BF4B36100F77B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

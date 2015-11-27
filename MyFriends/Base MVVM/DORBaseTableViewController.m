@@ -17,11 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.tableView.emptyDataSetSource = self;
+    self.tableView.emptyDataSetDelegate = self;
+    
+    // A little trick for removing the cell separators
+    self.tableView.tableFooterView = [UIView new];
+    
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,70 +38,113 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)modelDidUpdate:(id)model
+{
+    [self.tableView reloadData];
+}
+
+- (void)modelDidStartActivity:(id)model
+{
+    [SVProgressHUD showWithStatus:self.model.activityMessage];
+}
+
+- (void)modelDidFinishActivity:(id)model
+{
+    [SVProgressHUD popActivity];
+}
+
+- (void) modelDidFailWithError:(NSError*) error
+{
+    NSString *message = [error.userInfo objectForKey:NSLocalizedDescriptionKey];
+    
+    if (!message)
+        message =NSLocalizedString(@"Internal error", nil);
+    
+    [TSMessage showNotificationInViewController:self.navigationController?:self
+                                          title:NSLocalizedString(@"Error", nil)
+                                       subtitle:message
+                                          image:nil
+                                           type:TSMessageNotificationTypeError
+                                       duration:TSMessageNotificationDurationAutomatic
+                                       callback:nil
+                                    buttonTitle:nil
+                                 buttonCallback:nil
+                                     atPosition:TSMessageNotificationPositionNavBarOverlay
+                           canBeDismissedByUser:YES];
+}
+
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return [UIImage imageNamed:@"DORIconFriendsEmpty"];
+}
+
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
+{
+    NSString *text =self.emptyTableviewText;
+    
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0f],
+                                 NSForegroundColorAttributeName: [UIColor darkGrayColor]};
+    
+    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+}
+
+
 #pragma mark - Table view data source
 
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 87;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.model.friends.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell<DORReactiveView> *cell = [tableView dequeueReusableCellWithIdentifier:@"DORFriendCell" forIndexPath:indexPath];
     
+    [cell bindViewModel:self.model.friends[indexPath.row]];
     // Configure the cell...
-    
+    [self.model downloadPreviewForIndexPath:indexPath
+                                   ismoving:(!tableView.dragging && !tableView.decelerating)];
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+
+- (void) shouldUpdateCellAtIndexPath:(NSIndexPath*)indexPath
+{
+    if (indexPath)
+        [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
-*/
+#pragma mark -
+#pragma mark - UIScrollView delegate
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    // 1
+    [self.model suspendAllOperations];
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    // 2
+    
+    if (!decelerate) {
+        NSSet *visibleRows = [NSSet setWithArray:[self.tableView indexPathsForVisibleRows]];
+        [self.model loadImagesForOnscreenCells:visibleRows ];
+        [self.model resumeAllOperations];
+    }
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    // 3
+    NSSet *visibleRows = [NSSet setWithArray:[self.tableView indexPathsForVisibleRows]];
+    [self.model loadImagesForOnscreenCells:visibleRows ];
+    [self.model resumeAllOperations];
 }
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

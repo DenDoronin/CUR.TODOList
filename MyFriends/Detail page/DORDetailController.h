@@ -7,7 +7,10 @@
 //
 
 #import "DORBaseController.h"
+#import "DORDetailModel.h"
 
 @interface DORDetailController : DORBaseController
+
+@property (nonatomic, strong) DORDetailModel *model;
 
 @end

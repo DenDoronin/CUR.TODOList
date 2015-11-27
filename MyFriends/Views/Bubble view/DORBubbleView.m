@@ -1,27 +1,3 @@
-//
-//  BRBubbleView.m
-//  BreadWallet
-//
-//  Created by Aaron Voisine on 3/10/14.
-//  Copyright (c) 2014 Aaron Voisine <voisine@gmail.com>
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
 
 #import "DORBubbleView.h"
 
@@ -62,7 +38,7 @@
     return v;
 }
 
-+ (instancetype)viewWithText:(NSString *)text tipPoint:(CGPoint)point tipDirection:(BRBubbleTipDirection)direction
++ (instancetype)viewWithText:(NSString *)text tipPoint:(CGPoint)point tipDirection:(DORBubbleTipDirection)direction
 {
     DORBubbleView *v = [[self alloc] initWithFrame:CGRectMake(0, 0, MARGIN_X*2, MARGIN_Y*2)];
 
@@ -125,7 +101,7 @@
     [self setNeedsLayout];
 }
 
-- (void)setTipDirection:(BRBubbleTipDirection)tipDirection
+- (void)setTipDirection:(DORBubbleTipDirection)tipDirection
 {
     _tipDirection = tipDirection;
     [self setNeedsLayout];
@@ -195,7 +171,7 @@
                 center.x += MARGIN_X*2 - (tipPoint.x - rect.size.width/2);
         
         center.y = self.tipPoint.y;
-        center.y += (self.tipDirection == BRBubbleTipDirectionUp ? 1 : -1)*((rect.size.height + MARGIN_Y*2)/2 + RADIUS);
+        center.y += (self.tipDirection == DORBubbleTipDirectionUp ? 1 : -1)*((rect.size.height + MARGIN_Y*2)/2 + RADIUS);
     }
     
 //    if (self.tipPoint.x > 1) { // position bubble to point to tipPoint
@@ -233,7 +209,7 @@
         if (x > rect.size.width + MARGIN_X*2 - (RADIUS + 7.5)) x = rect.size.width + MARGIN_X*2 - (RADIUS + 7.5);
         if (x < self.layer.cornerRadius + 7.5) x = self.layer.cornerRadius + 7.5;
 
-        if (self.tipDirection == BRBubbleTipDirectionUp) {
+        if (self.tipDirection == DORBubbleTipDirectionUp) {
             CGPathMoveToPoint(path, NULL, 0.0, 7.5);
             CGPathAddLineToPoint(path, NULL, 7.5, 0.0);
             CGPathAddLineToPoint(path, NULL, 15.0, 7.5);

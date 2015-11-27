@@ -41,7 +41,7 @@
     [formatter setLocale:[NSLocale currentLocale]];
     NSString *decimalSymbol = [formatter decimalSeparator];
     
-    NSCharacterSet *validCharacters = [NSCharacterSet characterSetWithCharactersInString:[@"1234567890" stringByAppendingString:decimalSymbol]];
+    NSCharacterSet *validCharacters = [NSCharacterSet characterSetWithCharactersInString:[@"1234567890 ()-+" stringByAppendingString:decimalSymbol]];
     
     while ([scanner isAtEnd] == NO) {
         NSString *buffer;
@@ -64,15 +64,16 @@
 - (BOOL)        isValidInputValue:      (NSString*) inputValue
 {
    
+    inputValue = [self stripInputValue:inputValue];
     BOOL isValid = inputValue && ![inputValue isEqualToString:@""];
     
     if (isValid)
     {
-        NSDecimalNumber *parsedAmount = [NSDecimalNumber decimalNumberWithString:inputValue locale:[NSLocale currentLocale]];
-        isValid = parsedAmount != nil;
+
+        isValid = [[self stripInputValue:inputValue] isEqualToString:inputValue];
         if (isValid)
         {
-            
+            self.isValid = YES;
         }
         else
         {

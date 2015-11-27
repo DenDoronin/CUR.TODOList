@@ -6,8 +6,11 @@
 //  Copyright © 2015 Doronin Denis. All rights reserved.
 //
 
-#import "DORBaseModel.h"
+#import "DORBaseTableModel.h"
+@interface DORFriendsListModel : DORBaseTableModel
 
-@interface DORFriendsListModel : DORBaseModel
+@property (nonatomic, strong) id selectedFriend;
 
+
+- (void) saveAsFriend: (DORUser*) friendObjec;
 @end

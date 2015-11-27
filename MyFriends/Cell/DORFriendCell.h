@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DORFriendCell : UITableViewCell
+@interface DORFriendCell : UITableViewCell<DORReactiveView>
+@property (weak, nonatomic) IBOutlet UIImageView *ivPhoto;
+@property (weak, nonatomic) IBOutlet UILabel *lblNameFirst;
+@property (weak, nonatomic) IBOutlet UILabel *lblNameLast;
 
 @end

@@ -20,4 +20,19 @@
     // Configure the view for the selected state
 }
 
+
+- (void)bindViewModel:(id)viewModel
+{
+    DORUser *friend = viewModel;
+    self.lblNameFirst.text = friend.name.first;
+    self.lblNameLast.text = friend.name.last;
+    if (friend.picture.medium)
+        self.ivPhoto.image =[UIImage imageWithData: friend.picture.medium];
+    else
+        if (friend.picture.mediumFailed.boolValue == NO)
+            self.ivPhoto.image = [UIImage imageNamed:@"DORIconFriendsEmpty"];
+    else
+        self.ivPhoto.image = [UIImage imageNamed:@"DORFriendFailed"];
+    
+}
 @end

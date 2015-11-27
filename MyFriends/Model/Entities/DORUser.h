@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class DORName,DORLocation,DORPicture;
 @interface DORUser : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass

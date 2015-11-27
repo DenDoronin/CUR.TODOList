@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CURTextFieldValidatorProtocol <NSObject>
+@protocol DORTextFieldValidatorProtocol <NSObject>
 
 
 @property (nonatomic, readonly)          BOOL       isValid;

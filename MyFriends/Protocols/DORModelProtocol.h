@@ -38,7 +38,7 @@
 @end
 
 
-@protocol DORTableModelActivityDelegate <CURModelActivityDelegate>
+@protocol DORTableModelActivityDelegate <DORModelActivityDelegate>
 
 @required
 

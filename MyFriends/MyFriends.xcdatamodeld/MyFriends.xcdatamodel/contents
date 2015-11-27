@@ -1,4 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="DORLocation" representedClassName="DORLocation" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DORUser" inverseName="location" inverseEntity="DORUser" syncable="YES"/>
+    </entity>
+    <entity name="DORName" representedClassName="DORName" syncable="YES">
+        <attribute name="first" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DORUser" inverseName="name" inverseEntity="DORUser" syncable="YES"/>
+    </entity>
+    <entity name="DORPicture" representedClassName="DORPicture" syncable="YES">
+        <attribute name="large" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="largeFailed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="largeURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medium" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="mediumFailed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mediumURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="thumbnailFailed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="thumbnailURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DORUser" inverseName="picture" inverseEntity="DORUser" syncable="YES"/>
+    </entity>
+    <entity name="DORUser" representedClassName="DORUser" syncable="YES">
+        <attribute name="bsn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cell" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dob" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFriend" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="md5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="registered" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="salt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sha1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sha256" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DORLocation" inverseName="user" inverseEntity="DORLocation" syncable="YES"/>
+        <relationship name="name" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DORName" inverseName="user" inverseEntity="DORName" syncable="YES"/>
+        <relationship name="picture" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DORPicture" inverseName="user" inverseEntity="DORPicture" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DORUser" positionX="-63" positionY="-18" width="128" height="300"/>
+        <element name="DORName" positionX="-54" positionY="90" width="128" height="105"/>
+        <element name="DORLocation" positionX="-36" positionY="99" width="128" height="120"/>
+        <element name="DORPicture" positionX="-18" positionY="108" width="128" height="195"/>
+    </elements>
 </model>

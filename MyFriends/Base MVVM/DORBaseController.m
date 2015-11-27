@@ -272,10 +272,6 @@
 {
     if (self.topScrollView && ![self hasAnyResponder])
     {
-//        UIEdgeInsets contentInsets = UIEdgeInsetsZero;
-//        self.topScrollView.contentInset = contentInsets;
-//        self.topScrollView.scrollIndicatorInsets = contentInsets;
-//        [self.topScrollView scrollRectToVisible:CGRectZero animated:YES];
         [self dismissKeyboard];
     }
 }

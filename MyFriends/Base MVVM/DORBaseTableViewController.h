@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIScrollView+EmptyDataSet.h"
+#import "DORBaseTableModel.h"
 
-@interface DORBaseTableViewController : UITableViewController
+@interface DORBaseTableViewController : UITableViewController<DORTableModelActivityDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
+
+@property (nonatomic, strong) DORBaseTableModel *model;
+@property (nonatomic, strong) NSString *emptyTableviewText;
+- (void) modelDidUpdate:(id)model;
+
+- (void) modelDidStartActivity:(id)model;
+- (void) modelDidFinishActivity:(id)model;
+- (void) modelDidFailWithError:(NSError*) error;
 
 @end
