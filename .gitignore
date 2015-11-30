@@ -26,5 +26,7 @@ DerivedData
 
 pkg/*
 
+staff_to_remove
+
 Pods
 Podfile.lock
