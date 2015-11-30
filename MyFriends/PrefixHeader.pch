@@ -42,6 +42,7 @@
 #import "DORName.h"
 #import "DORLocation.h"
 #import "DORPicture.h"
-// changes
 // two
+// command diff
+// added string
 #endif /* PrefixHeader_pch */

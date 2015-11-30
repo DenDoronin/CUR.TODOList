@@ -17,10 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//[SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
     [SVProgressHUD setBackgroundColor:RGBA(50, 58, 60,0.9*255)];
     [SVProgressHUD setForegroundColor:RGB(222, 222, 222)];
 
+    // more changes
     
     return YES;
 }
