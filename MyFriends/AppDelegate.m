@@ -21,8 +21,7 @@
     [SVProgressHUD setForegroundColor:RGB(222, 222, 222)];
 
     // more changes
-    // staged
-    // not staged
+    
     return YES;
 }
 
